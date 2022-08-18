@@ -1,0 +1,27 @@
+<mat-card class="card_background_blue">
+<mat-card-header>
+    <mat-card-title><strong>Parents</strong></mat-card-title>
+  
+</mat-card-header>
+
+<p >menssage: <small>{{ menssageParent }}</small></p>
+
+    <mat-card-actions>
+        <button (click)="pureService()" mat-button>Use Service</button>
+        <button (click)="inputChange()" mat-button>Use Input Property</button>
+        <button (click)="useService()" mat-button> Use Observable</button>
+    </mat-card-actions>
+
+    <!-- 
+        primera variable: para el input  
+        segunda variable: evento del output    
+    -->
+    <mat-card-footer>
+        <mat-card>
+    <app-child 
+        [menssageChild]="menssageChild"
+        (sendMenssageParent)="inputChangeParents( $event )"
+    ></app-child>
+</mat-card>
+</mat-card-footer>
+</mat-card>
