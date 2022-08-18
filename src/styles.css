@@ -9,3 +9,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding: 2px;
     text-align: center;
 }
+
+.container_buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+

@@ -6,18 +6,18 @@
 
 <p >menssage: <small>{{ menssageParent }}</small></p>
 
-    <mat-card-actions>
-        <button (click)="pureService()" mat-button>Use Service</button>
-        <button (click)="inputChange()" mat-button>Use Input Property</button>
-        <button (click)="useService()" mat-button> Use Observable</button>
-    </mat-card-actions>
+    <div class="container_buttons">
+        <button (click)="pureService()" mat-raised-button color="primary">Use Service</button>
+        <button (click)="inputChange()" mat-raised-button color="primary">Use Input Property</button>
+        <button (click)="useService()" mat-raised-button color="primary"> Use Observable</button>
+    </div>
 
     <!-- 
         primera variable: para el input  
         segunda variable: evento del output    
     -->
     <mat-card-footer>
-        <mat-card>
+        <mat-card class="p-1">
     <app-child 
         [menssageChild]="menssageChild"
         (sendMenssageParent)="inputChangeParents( $event )"
