@@ -56,7 +56,7 @@ export class ParentComponent implements OnInit {
   // COMUNICACION P > H : 
   // llamada al servicio (puro), para darle el valor al mensaje del padre
   pureService(){
-    console.log('event1')
+    
     this._comunicationServ.emiterParent('PARENT USING SERVICE')
   }
   
